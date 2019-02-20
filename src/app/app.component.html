@@ -1,11 +1,14 @@
+<br/>
+<mat-form-field style="width: 50%">
+    <mat-select [(ngModel)]="selectedComponent" placeholder="Choose a component to render">
+      <mat-option *ngFor="let component of components" [value]="component">
+        {{component}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br/>
 <app-dynamic-content-outlet
   *ngIf="selectedComponent"
   [componentName]="selectedComponent"
 ></app-dynamic-content-outlet>
 
-Choose a component to render:
-<select [(ngModel)]="selectedComponent">
-  <option *ngFor="let component of components" [ngValue]="component">{{
-    component
-  }}</option>
-</select>

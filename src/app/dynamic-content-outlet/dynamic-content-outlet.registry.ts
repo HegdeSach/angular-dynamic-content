@@ -27,10 +27,10 @@ export const DynamicContentOutletRegistry: RegistryItem[] = [
     modulePath: 'src/app/dynamic-multiple/dynamic-multiple.module',
     moduleName: 'DynamicMultipleModule'
   },
-  {
-    componentName: 'DynamicMultipleTwoComponent',
-    componentType: DynamicMultipleTwoComponent,
-    modulePath: 'src/app/dynamic-multiple/dynamic-multiple.module',
-    moduleName: 'DynamicMultipleModule'
-  }
+  // {
+  //   componentName: 'DynamicMultipleTwoComponent',
+  //   componentType: DynamicMultipleTwoComponent,
+  //   modulePath: 'src/app/dynamic-multiple/dynamic-multiple.module',
+  //   moduleName: 'DynamicMultipleModule'
+  // }
 ];

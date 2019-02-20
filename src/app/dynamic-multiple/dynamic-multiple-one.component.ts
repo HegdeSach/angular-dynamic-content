@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { DynamicMultipleTwoComponent } from './dynamic-multiple-two.component';
 
 @Component({
   selector: 'app-dynamic-multiple-one',
@@ -6,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dynamic-multiple-one.component.css']
 })
 export class DynamicMultipleOneComponent implements OnInit {
-  constructor() {}
+  constructor(private dailog: MatDialog) {}
 
   ngOnInit() {}
+
+  openDialog() {
+    this.dailog.open(DynamicMultipleTwoComponent);
+  }
 }
