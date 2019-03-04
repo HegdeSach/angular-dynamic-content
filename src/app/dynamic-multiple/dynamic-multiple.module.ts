@@ -12,4 +12,9 @@ import { SharedModule } from '../shared/shared.module';
   ],
   entryComponents: [DynamicMultipleOneComponent, DynamicMultipleTwoComponent]
 })
-export class DynamicMultipleModule {}
+export class DynamicMultipleModule {
+  static dynamicComponentsMap = {
+    DynamicMultipleOneComponent,
+    DynamicMultipleTwoComponent
+  };
+}
